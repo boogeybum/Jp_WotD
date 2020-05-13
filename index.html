@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
   <link rel="stylesheet" href="/assets/css/styles.css">
   <title>Word of the Day | Japanese</title>
 </head>
-<body>
+<body class="text-center">
   <div class="container">
     <div class="jumbotron">
       
@@ -15,9 +18,22 @@
       <hr class="my-4">
       <h1 class="display-2">JAPANESE</h1>
       <p class="lead">Learn Japanese, one word a day, right in your inbox.</p>
-      <hr class="my-4">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up Today!</a>
     </div>
+
+    <!-- Form -->
+    <form action="/" class="form-signin" method="post">
+      <img class="mb-4" src="assets/images/CS_Mark.png" alt="cs_logo" width="102" height="117.5">
+      <h1 class="h3 mb-3 font-weight-normal">Signup for Japanese straight to your inbox!</h1>
+      
+      <input type="text" class="form-control top" placeholder="First Name" name="firstName" required autofocus />
+      
+      <input type="text" class="form-control middle" placeholder="Last name" name="lastName" required>
+      
+      <input type="email" class="form-control bottom" placeholder="Email address" name="emailAddress" required>
+  
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up!</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Elm Hill Media</p>
+    </form>
     
   </div>
 </body>
